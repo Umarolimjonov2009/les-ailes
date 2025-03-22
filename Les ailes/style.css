@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 21px 0;
+  border-bottom: 1px solid gray;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.btn {
+  background: #fc004a;
+  color: white;
+  width: 256px;
+  height: 46px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.menu-btn {
+  background-color: inherit;
+  border: none;
+  font-size: 24px;
+  color: #fc004a;
+  display: none;
+}
+
+main {
+  padding: 63px 0;
+}
+.hero__img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 32.48px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 20px 0;
+}
+
+.card {
+  width: 235px;
+  height: 391px;
+  box-shadow: 0px 4px 6px -4px #0000001a;
+  box-shadow: 0px 10px 15px -3px #0000001a;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card p{
+    margin: 15px 0;
+    color: #fc004a;
+    font-size: 18px;
+}
+.btn2{
+    width: 40px;
+    height: 40px;
+    background-color: #fc004a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 34px;
+    margin-left: 150px;
+
+}
+.ota{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#modal{
+  width: 1000px;
+  height: 500px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  top: 350px;
+  left: 190px;
+  padding-top: 50px;
+  display: none;
+}
+.modal-box{
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+.modal-box button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+}
+#book{
+  background-color: green;
+}
+#cancel{
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  header img {
+    display: none;
+  }
+  header {
+    padding: 21px;
+  }
+  .ota{
+    justify-content: center;
+  }
+  .foods{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  nav ul {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
